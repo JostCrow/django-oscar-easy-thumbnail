@@ -1,0 +1,1 @@
+# django-oscar-easy-thumbnail
