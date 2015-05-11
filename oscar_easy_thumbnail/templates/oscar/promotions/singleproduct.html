@@ -12,7 +12,7 @@
         <div class="col-sm-3">
             <div class="image_container">
                 {% with image=product.primary_image %}
-                    {% thumbnail image.original 400x400 upscale=False as thumb %}
+                    {% thumbnail image.original 400x400 as thumb %}
                     <a href="{{ product.get_absolute_url }}"><img class="thumbnail" src="{{ thumb.url }}" alt="{{ product.get_title }}"></a>
                 {% endwith %}
             </div>

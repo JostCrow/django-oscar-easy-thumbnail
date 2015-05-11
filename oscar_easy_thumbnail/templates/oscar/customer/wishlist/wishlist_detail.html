@@ -39,7 +39,7 @@
                                 <td>
                                     {% if product %}
                                         {% with image=product.primary_image %}
-                                            {% thumbnail image.original 100x100 upscale=False as thumb %}
+                                            {% thumbnail image.original 100x100 as thumb %}
                                             <a href="{{ product.get_absolute_url }}">
                                                 <img class="thumbnail" src="{{ thumb.url }}" alt="{{ product.get_title }}" />
                                             </a>
